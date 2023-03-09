@@ -16,6 +16,7 @@ h6 {
 .navbar {
   position: absolute;
   width: 100%;
+  background-color: #0000007a;
 }
 .navbar-expand-lg .navbar-nav {
   margin: auto;
@@ -46,6 +47,7 @@ h6 {
   color: white !important;
   font-weight: bold;
   border-bottom: 2px solid rgba(255, 255, 255, 0);
+  transition: .5s ease-in-out;
 }
 .nav-link:hover {
   border-bottom: 2px solid white;
@@ -63,6 +65,7 @@ h6 {
   align-items: center;
 }
 .socials a {
+  cursor: pointer !important;
   color: white;
   text-decoration: none;
   border: 2px solid rgba(255, 255, 255, 0);
@@ -440,15 +443,21 @@ h6 {
 .counter-box {
   position: relative;
 }
-.dark-text {
+.dark-text-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 83px;
-  left: 64px;
+  top: 0px;
+  height: 100%;
+}
+.dark-text {
   font-size: 22px;
   font-weight: 600;
 }
 .section10 .container {
-  padding: 42px 0;
+  padding: 42px 0 32px;
 }
 .section11 {
   background-color: #f9f9f8;
@@ -1165,15 +1174,20 @@ footer {
   font-weight: 600;
   border-bottom: 1px solid #7a6363;
 }
-.nav_point > ul {
+.nav_point {
   display: flex;
-  list-style-type: none;
-  justify-content: space-between;
-  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin: 20px 0;
 }
-.nav_point > ul > li {
-  padding: 15px;
-  width: 68px;
+.nav_point div {
+  width: 25%;
+}
+.nav_point div a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 .footer_icon {
   display: flex;
@@ -1260,9 +1274,17 @@ footer {
   .right-box {
     margin-bottom: 10px !important;
   }
-  .circle-box {
+  .outer-circle {
+    position: absolute;
     top: -100px;
-    left: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+  }
+  .circle-box {
+    position: unset;
     width: 250px;
     height: 250px;
   }
@@ -1282,6 +1304,9 @@ footer {
   .card-btn {
     font-size: 10px;
     width: 146px;
+  }
+  .right-box {
+    padding-right: 0 !important;
   }
   .right-box-inner h2 span {
     font-size: 27px;
@@ -1366,6 +1391,7 @@ footer {
   }
   .features {
     padding: 40px 0 0;
+    margin: 60px 0;
     overflow-x: scroll;
     flex-wrap: initial;
     -ms-overflow-style: none; /* IE and Edge */
@@ -1434,7 +1460,7 @@ footer {
     padding: 0;
   }
   .testim .wrap {
-    top: 203px;
+    top: 225px;
   }
   .testim .dots {
     padding-left: 0 !important;
@@ -1476,5 +1502,8 @@ footer {
   }
   .row {
     margin-right: 0;
+  }
+  .nav_point {
+    width: 70%;
   }
 }
