@@ -1335,7 +1335,11 @@ footer {
   .navbar-brand img {
     width: 103px;
   }
+  .main {
+    height: 76vh !important;
+  }
   .home_main {
+    height: 78vh;
     right: 0;
     left: 0;
     top: 0;
